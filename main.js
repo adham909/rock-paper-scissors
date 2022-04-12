@@ -42,12 +42,13 @@ function checkWinner(){
             userChoice ==="scissors" && computerChoice === "paper")
             {
                 // user win
-                updateScore();
+                updateScore(1);
                 statue.innerText = "win";
                 statue.style.color = "#3aed0d";
         }
     else{
-        // user lose 
+        // user lose
+        updateScore(-1);
         statue.innerText = "lose";
         statue.style.color = "#d91717";
     }
@@ -61,8 +62,8 @@ reset.addEventListener("click" , ()=>{
     main.style.display = 'flex';
 })
 
-function updateScore(){
-    score += 1;
+function updateScore(value){
+    score += value;
     scoreEl.innerText = score;
 }
 
