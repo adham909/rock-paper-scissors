@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Frontend Mentor | Rock, Paper, Scissors</title> 
+</head>
+<body>
+
+  <div class="container">
+    <header>
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+
+        <div class="score-container">
+            <h4>score</h4>
+            <p id="score">0</p>
+        </div>
+    </header>
+
+    <main id="main">
+      <button class="btn-circle btn-paper pick" data-choice="paper">
+        <span class="wrapper">
+          <img src="images/icon-paper.svg" alt="paper"/>
+        </span>
+      </button>
+
+      <button class="btn-circle btn-scissors pick" data-choice="scissors">
+        <span class="wrapper">
+          <img src="images/icon-scissors.svg" alt="scissors"/>
+        </span>
+      </button>
+
+      <button class="btn-circle btn-rock pick" data-choice="rock">
+        <span class="wrapper">
+          <img src="images/icon-rock.svg" alt="rock"/>
+        </span>
+      </button>
+    </main>
+
+    <section class="selection" id="selection">
+      <div>
+          <h2>You Picked</h2>
+          <button class="btn-circle btn-paper" id="user-select">
+            <span class="wrapper">
+              <img src="images/icon-paper.svg" alt="paper"/>
+            </span>
+          </button>
+      </div>
+      <div class="sm-down">
+          <h1>you <span id="statue">win</span></h1>
+          <button id="reset">Play again</button>
+      </div>
+      <div>
+        <h2>The Hause Picked</h2>
+        <button class="btn-circle btn-rock" id="computer-select">
+          <span class="wrapper">
+            <img src="images/icon-rock.svg" alt="rock"/>
+          </span>
+        </button>
+      </div>
+    </section>
+
+
+    <section id="rules-modal" class="rules-modal">
+          <div class="rules-header">
+              <h1>Rules</h1>
+          </div>
+          <div class="rules-img">
+            <img src="images/image-rules.svg"/>
+          </div>
+            <button id="close">
+              <img src="images/icon-close.svg"/>
+            </button>
+         
+    </section>
+
+    <button id="open" class="rules-btn">Rules</button>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
