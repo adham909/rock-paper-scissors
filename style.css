@@ -200,3 +200,19 @@ main::before{
         transform: scale(0.7);
      }
 }
+
+@media screen and (max-width:400px){
+    main .btn-circle{
+        transform: scale(0.8);
+        width: 120px;
+        height: 120px;
+    }
+    main .wrapper{
+        width: 100px;
+        height: 100px;
+    }
+    header .score-container{
+        padding: 10px 20px;
+    }
+
+}
