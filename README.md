@@ -24,3 +24,7 @@ If the player wins, they gain 1 point. If the computer wins, the player loses on
 - Paper beats Rock
 - Rock beats Scissors
 - Scissors beats Paper
+
+
+## Demo
+[Link](https://adham909.github.io/rock-paper-scissors/)
